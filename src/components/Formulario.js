@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { CategoriasContext } from '../context/CategoriasContext';
+import { RecetasContext } from '../context/RcetasContext';
 
 const Formulario = () => {
 
@@ -8,7 +9,8 @@ const Formulario = () => {
         categoria: ''
     });
 
-    const { categorias } = useContext(CategoriasContext);
+    const { categorias } = useContext( CategoriasContext );
+    const { buscarRecetas } = useContext( RecetasContext );
 
     // funcion para leer contenidos
     const obtenerDatosReceta = e => {
@@ -19,7 +21,13 @@ const Formulario = () => {
     }
 
     return ( 
-        <form>
+        <form
+            className="col-12"
+            onSubmit={e => {
+                e.preventDefault();
+                buscarRecetas(busqueda)
+            }}
+        >
             <fieldset>
                 <legend>Busca bebidas por Categoría o Ingrediente</legend>
             </fieldset>
