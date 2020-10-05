@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { CategoriasContext } from '../context/CategoriasContext';
-import { RecetasContext } from '../context/RcetasContext';
+import { RecetasContext } from '../context/RecetasContext';
 
 const Formulario = () => {
 

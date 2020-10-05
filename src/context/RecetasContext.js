@@ -34,13 +34,13 @@ const RecetasProvider = (props) => {
     return ( 
         <RecetasContext.Provider
             value={{
-                // recetas,
+                recetas,
                 buscarRecetas, 
                 guardarConsultar
             }}
         >
             {props.children}
-        </RecetasContext.Provider>
+        </RecetasContext.Provider> 
      );
 }
  

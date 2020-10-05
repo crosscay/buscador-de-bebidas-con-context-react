@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react';
 import Header from './components/Header';
 import Formulario from './components/Formulario';
+import ListaRecetas from './components/ListaRecetas';
 
 import CategpriasProvider from  './context/CategoriasContext';
-import RecetasProvider  from './context/RcetasContext';
+import RecetasProvider  from './context/RecetasContext';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <div className="row">
           <Formulario />
         </div>
+        <ListaRecetas />
       </div>
      </RecetasProvider>
    </CategpriasProvider>
