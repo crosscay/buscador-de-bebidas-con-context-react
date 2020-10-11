@@ -47,14 +47,16 @@ const Receta = ({receta}) => {
     // extraer los valores del context
     const { informacion, guardarIdReceta, guardarReceta } = useContext(ModalContext);
 
+   // console.log(informacion);
+
     // Muestra y formatea los ingredientes
     const mostrarIngredientes = informacion => {
         let ingredientes = [];
         for(let i = 1; i < 16; i++){
             if( informacion[`strIngredient${i}`] ) {
-                ingredientes.push(
-                    <li> { informacion[`strIngredient${i}`] }  { informacion[`strMeasure${i}`] }</li>
-                )
+                // ingredientes.push(
+                //     <li> { informacion[`strIngredient${i}`] }  { informacion[`strMeasure${i}`] }</li>
+                // )
             }
         }
 
@@ -82,22 +84,22 @@ const Receta = ({receta}) => {
                         open={open}
                         onClose={() => {
                             guardarIdReceta(null);
-                    
+                            guardarReceta({});
                             handleClose();
                         }}
                      >
                          <div style={modalStyle} className={classes.paper}>
-                            {/* <h2>{informacion.strDrink}</h2> */}
+                            <h2>{informacion.strDrink}</h2>
                             <h3 className="mt-4">Instrucciones</h3>
                             <p>
-                                {/* {informacion.strInstructions} */}
+                                {informacion.strInstructions}
                             </p>
 
-                            {/* <img className="img-fluid my-4" src={informacion.strDrinkThumb} /> */}
+                            <img className="img-fluid my-4" src={informacion.strDrinkThumb} />
 
                             <h3>Ingredientes y cantidades</h3>
                             <ul>
-                                {/* { mostrarIngredientes(informacion) } */}
+                                { mostrarIngredientes(informacion) }
                             </ul>
                          </div>
                      </Modal>
