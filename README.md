@@ -1,7 +1,7 @@
 # Buscador de bebidas con Context react
 Aplicación creada en react js para buscar bebidas desde una api.
 
-### [Demostración](https://nostalgic-neumann-755021.netlify.app/)
+### [Demostración](https://buscador-de-bebidas-con-context.netlify.app/)
 
 ### Sceenshot
 ![bebidas_1](https://user-images.githubusercontent.com/15184739/95692977-5a007200-0bef-11eb-911c-c9ba299f5354.PNG)
