@@ -1,4 +1,4 @@
-# Buscador de bebidas con Context react
+# Buscador de bebidas con Context react js
 Aplicación creada en react js para buscar bebidas desde una api.
 
 ### [Demostración](https://buscador-de-bebidas-con-context.netlify.app/)
@@ -13,7 +13,7 @@ Aplicación creada en react js para buscar bebidas desde una api.
 Para iniciar el proyecto utilice:
 
 ```bash
-$ git clon https://github.com/crosscay/buscador-de-bebidas-con-context-react.git
+$ git clon https://github.com/crosscay/buscador-de-bebidas-con-context-react-js.git
 $ cd buscador_de_bebidas_con_context
 # instala las dependencias del proyecto
 $ npm i
