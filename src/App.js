@@ -1,15 +1,15 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Header from './components/Header';
 import Formulario from './components/Formulario';
 import ListaRecetas from './components/ListaRecetas';
 
-import CategpriasProvider from  './context/CategoriasContext';
+import CategoriasProvider from  './context/CategoriasContext';
 import RecetasProvider  from './context/RecetasContext';
 import ModalProvider  from './context/ModalContext';
 
 function App() {
   return (
-   <CategpriasProvider>
+   <CategoriasProvider>
      <RecetasProvider>
        <ModalProvider>
         <Header />
@@ -21,7 +21,7 @@ function App() {
         </div>
        </ModalProvider>
      </RecetasProvider>
-   </CategpriasProvider>
+   </CategoriasProvider>
   );
 }
 

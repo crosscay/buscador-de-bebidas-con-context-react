@@ -29,7 +29,7 @@ const RecetasProvider = (props) => {
             obtenerRecetas();
         }
 
-    }, [busqueda]);
+    }, [busqueda, consultar, nombre, categoria]);
 
     return ( 
         <RecetasContext.Provider
